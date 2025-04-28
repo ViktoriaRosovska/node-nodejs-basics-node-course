@@ -8,6 +8,7 @@ const remove = async () => {
         const sourceFile = "fileToRemove.txt";
         if (existsSync(path.join(sourceDir, sourceFile))) {
             unlink(path.join(sourceDir, sourceFile));
+            console.log(`file ${sourceFile} was successful delete`);
         } else {
             throw new Error("FS operation failed");
         }
