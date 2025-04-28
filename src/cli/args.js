@@ -9,7 +9,7 @@ const parseArgs = () => {
             props.push(`${key} is ${value}`);
         }
     }
-    console.log(props.join("\n"));
+    console.log(props.join(", "));
 };
 
 parseArgs();
