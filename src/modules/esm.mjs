@@ -19,9 +19,9 @@ const pathCdata = readFileSync(pathC, 'utf-8');
 console.log(pathCdata);
 
 if (random > 0.5) {
-    unknownObject = readFileSync(pathA, 'utf-8');
+    unknownObject = JSON.parse(readFileSync(pathA, 'utf-8'));
 } else {
-    unknownObject = readFileSync(pathB, 'utf-8');
+    unknownObject = JSON.parse(readFileSync(pathB, 'utf-8'));
 }
 
 console.log(`Release ${release()}`);
